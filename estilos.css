@@ -5,5 +5,79 @@
     }
 
 .menu ul li :hover{
-    background-color: rgb(13, 178, 238)
+    background-color: #0db2ee
+}
+
+.generos{
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 60px);
+    color: white;
+    text-shadow: 0 0 5px black;
+    text-align: center;
+}
+
+.item{
+    border: 2px solid #0db2ee;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(img/pexels-coco-championship-598686.jpg);
+}
+
+.item2{
+    background-image: url(img/pexels-johannes-plenio-1423600.jpg);
+}
+
+.item3{
+    background-image: url(img/pexels-marek-piwnicki-16300875.jpg);
+}
+
+.item4{
+    background-image: url(img/pexels-mark-stebnicki-2889440.jpg);
+}
+
+.item5{
+    background-image: url(img/pexels-mike-bird-349455.jpg);
+}
+
+.item6{
+    background-image: url(img//pexels-pixabay-39619.jpg);
+}
+
+.item7{
+    background-image: url(img/pexels-specna-arms-886454.jpg);
+}
+
+.item8{
+    background-image: url(img/plataformas.jpeg);
+}
+
+@media only screen and (min-width:480px){
+    .generos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 80px);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .generos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 80px);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .item{
+        filter: grayscale(100%);
+        transition: 0.4s;
+    }
+    .item:hover{
+        filter: none;
+        scale: 0.9;
+        transition: 0.4s;
+    }
 }
