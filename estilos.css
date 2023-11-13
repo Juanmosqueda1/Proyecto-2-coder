@@ -30,35 +30,35 @@ main{
 }
 
 .item1{
-    background-image: url(img/pexels-coco-championship-598686.jpg);
+    background-image: url(img/genero1.jpg);
 }
 
 .item2{
-    background-image: url(img/pexels-johannes-plenio-1423600.jpg);
+    background-image: url(img/genero2.jpg);
 }
 
 .item3{
-    background-image: url(img/pexels-marek-piwnicki-16300875.jpg);
+    background-image: url(img/genero3.jpg);
 }
 
 .item4{
-    background-image: url(img/pexels-mark-stebnicki-2889440.jpg);
+    background-image: url(img/genero4.jpeg);
 }
 
 .item5{
-    background-image: url(img/pexels-mike-bird-349455.jpg);
+    background-image: url(img/genero5.jpg);
 }
 
 .item6{
-    background-image: url(img//pexels-pixabay-39619.jpg);
+    background-image: url(img/genero6.jpg);
 }
 
 .item7{
-    background-image: url(img/pexels-specna-arms-886454.jpg);
+    background-image: url(img/genero7.jpg);
 }
 
 .item8{
-    background-image: url(img/plataformas.jpeg);
+    background-image: url(img/genero8.jpg);
 }
 
 .titulo{
@@ -133,36 +133,36 @@ section div button{
 }
 
 .game1{
-    background-image: url(img/baldurs\ gate\ 3.avif);
+    background-image: url(img/juego1.jpg);
 }
 .game2{
-    background-image: url(img/call\ of\ duty.jpeg);
+    background-image: url(img/juego9.jpeg);
 }
 .game3{
-    background-image: url(img/diablo\ 4.avif);
+    background-image: url(img/juego2.jpg);
 }
 .game4{
-    background-image: url(img/gta\ 6.jpg);
+    background-image: url(img/juego8.jpg);
 }
 .game5{
-    background-image: url(img/issac.jpeg);
+    background-image: url(img/juego5.jpeg);
 }
 .game6{
-    background-image: url(img/minecraft.jpg);
+    background-image: url(img/juego7.jpg);
 }
 .game7{
-    background-image: url(img/mk1.jpeg);
+    background-image: url(img/juego6.jpeg);
 }
 .game8{
-    background-image: url(img/re4.jpg);
+    background-image: url(img/juego4.jpg);
     background-position: right;
 }
 .game9{
-    background-image: url(img/red\ dead.jpg);
+    background-image: url(img/juego3.jpg);
 }
 
 h2{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     text-shadow: 0 0 5px black;
@@ -195,8 +195,12 @@ h2{
     font-size: 40px;
 }
 .faq p{
-    font-size: 30px;
+    font-size: 15px;
     margin: 5px;
+}
+.faq h2{
+    color: #1e7ea1;
+    font-size: 30px;
 }
 
 
@@ -223,6 +227,9 @@ h2{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 300px);
         margin: 20px;
+    }
+    h2{
+        font-size: 40px;
     }
 }
 
@@ -276,6 +283,20 @@ h2{
             grid-template-rows: repeat(3, 300px);
             margin: 20px;
     }
+    h2{
+        font-size: 50px;
+    }
+    .map{
+        width: 50%;
+    }
+    .faq p{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .faq h2{
+        color: #1e7ea1;
+        font-size: 40px;
+    }
 }
 
 @media only screen and (min-width:1024px){
@@ -316,5 +337,16 @@ h2{
         height: auto;
         width: 100%;
         font-size: 30px;
+    }    
+    .map{
+        width: 40%;
+    }
+    .faq p{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .faq h2{
+        color: #1e7ea1;
+        font-size: 40px;
     }
 }
