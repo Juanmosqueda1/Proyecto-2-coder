@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+$color1: white;
+$color2: black;
+$color3: #1e7ea1;
+
+.navbar{
+    background-color: $color3;
+}
+
+.generos{
+    display: grid;
+    background-color: $color2;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 60px);
+    color: $color1;
+    text-shadow: 0 0 5px $color2;
+    text-align: center;
+}
+
+.item{
+    border: 2px solid $color3;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.item1{
+    background-image: url(img/genero1.jpg);
+}
+
+.item2{
+    background-image: url(img/genero2.jpg);
+}
+
+.item3{
+    background-image: url(img/genero3.jpg);
+}
+
+.item4{
+    background-image: url(img/genero4.jpeg);
+}
+
+.item5{
+    background-image: url(img/genero5.jpg);
+}
+
+.item6{
+    background-image: url(img/genero6.jpg);
+}
+
+.item7{
+    background-image: url(img/genero7.jpg);
+}
+
+.item8{
+    background-image: url(img/genero8.jpg);
+}
+
+.titulo{
+    height: 70px;
+    background-color: $color3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    color: $color1;
+    text-shadow: 0 0 5px $color2;
+}
+
+.sec{
+    display: flex;
+    width: 100%;
+}
+
+.lanzamientos{
+    background-color: $color3;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    color: $color1;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 2px $color2;
+}
+
+.new img{
+    border: 5px solid $color2;
+}
+
+section{
+    margin: 0;
+}
+
+section div button{
+    opacity: 50%;
+}
+
+.games{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 600px);
+    grid-gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.juegos h2{
+    color: $color1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-shadow: 0 0 5px $color2;
+    text-align: center;
+}
+
+.juegos{
+    width: 80%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border: 5px solid $color3;
+}
+
+@for $i from 1 through 9{
+        .game#{$i} {
+        background-image: url(img/juego#{$i}.jpg);
+} 
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 0 0 5px $color2;
+    color: $color1;
+}
+
+.t-carrito h2{
+    color: $color2;
+    text-shadow: 1px 1px 2px $color3;
+}
+
+h3{
+    color: $color2;
+}
+
+
+.carrito{
+    text-align: center;
+    font-size: 30px;
+    color: $color1;
+    text-shadow: 1px 1px 2px $color3;
+}
+.compra{
+    background-color: $color3;
+}
+
+#form{
+    text-align: center;
+    margin: 10px;
+    color: $color2;
+    background-color: $color3;
+}
+
+#form input{
+    margin: 10px;
+}
+
+.faq{
+    font-family: 'Times New Roman', Times, serif;
+    color: $color2;
+    margin: 10px;
+    text-shadow: 0px 0px 2px $color2;
+    font-size: 40px;
+}
+.faq p{
+    font-size: 15px;
+    margin: 5px;
+}
+.faq h2{
+    color: $color3;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px ;
+}
+
+
+.foo{
+    background-color: $color2;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    color: $color1;
+    height: 100%;
+}
+
+@media only screen and (min-width:480px){
+    .generos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 80px);
+    }
+
+    .lanzamientos{
+        grid-template-rows: repeat(3, 400px);
+    }
+
+    .games{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 400px);
+        margin: 20px;
+    }
+    .juegos{
+        height: 400px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .generos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 80px);
+    }
+    .item1{
+        grid-column: 1/2 ;
+        grid-row: 1/2;
+    }
+    .item2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item3{
+        grid-column: 1/2 ;
+        grid-row: 3/4;
+    }
+    .item4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .item5{
+        grid-column: 2/3 ;
+        grid-row: 1/2;
+    }
+    .item6{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .item7{
+        grid-column: 2/3 ;
+        grid-row: 3/4;
+    }
+    .item8{
+        grid-column: 2/3 ;
+        grid-row: 4/5;
+    }
+
+    .lanzamientos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 300px);
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .games{
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(3, 500px);
+            margin: 20px;
+    }
+    .juegos{
+        height: 500px;
+        width: 200px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    .map{
+        width: 50%;
+    }
+    .faq p{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .faq h2{
+        color: $color3;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    .generos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 80px);
+    }
+    .item{
+        filter: none;
+        transition: 0.4s;
+    }
+    .item:hover{
+        filter: grayscale(100%);
+        scale: 0.9;
+        transition: 0.4s;
+    }
+
+    .sec{
+        width: 75%;
+        margin: auto;
+    }
+
+    .lanzamientos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1, 350px);
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .games{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 600px);
+        margin: 20px;
+}
+    .juegos{
+        height: 600px;
+    }
+
+    .foo{
+        height: auto;
+        width: 100%;
+        font-size: 30px;
+    }    
+    .map{
+        width: 40%;
+    }
+    .faq p{
+        font-size: 25px;
+        margin: 5px;
+    }
+    .faq h2{
+        color: $color3;
+        font-size: 40px;
+    }
+}
