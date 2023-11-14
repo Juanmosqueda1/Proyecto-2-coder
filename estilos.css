@@ -38,7 +38,7 @@
 }
 
 .item4 {
-  background-image: url(img/genero4.jpeg);
+  background-image: url(img/genero4.jpg);
 }
 
 .item5 {
@@ -57,10 +57,13 @@
   background-image: url(img/genero8.jpg);
 }
 
+.item9 {
+  background-image: url(img/genero9.jpg);
+}
+
 .titulo {
   height: 70px;
   background-color: #1e7ea1;
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -113,7 +116,7 @@ section div button {
 
 .juegos h2 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 25px;
   text-shadow: 0 0 5px black;
   text-align: center;
@@ -186,6 +189,10 @@ h3 {
   font-size: 30px;
   color: white;
   text-shadow: 1px 1px 2px #1e7ea1;
+}
+
+.carrito input {
+  margin-bottom: 10px;
 }
 
 .compra {
