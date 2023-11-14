@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .navbar {
   background-color: #1e7ea1;
 }
@@ -16,6 +24,14 @@
   color: white;
   text-shadow: 0 0 5px black;
   text-align: center;
+}
+
+.generos h2 {
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 5;
 }
 
 .item {
@@ -189,14 +205,12 @@ h3 {
   font-size: 30px;
   color: white;
   text-shadow: 1px 1px 2px #1e7ea1;
+  background-color: #1e7ea1;
+  margin: 10px;
 }
 
 .carrito input {
   margin-bottom: 10px;
-}
-
-.compra {
-  background-color: #1e7ea1;
 }
 
 #form {
@@ -227,6 +241,11 @@ h3 {
   color: #1e7ea1;
   font-size: 30px;
   text-shadow: 1px 1px 2px;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-delay: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .foo {

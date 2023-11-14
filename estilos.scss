@@ -9,6 +9,15 @@ $color2: black;
 $color3: #1e7ea1;
 $font1: 'Times New Roman', Times, serif;
 
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .navbar{
     background-color: $color3;
 }
@@ -21,6 +30,13 @@ $font1: 'Times New Roman', Times, serif;
     color: $color1;
     text-shadow: 0 0 5px $color2;
     text-align: center;
+}
+.generos h2{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 5;
 }
 
 .item{
@@ -135,13 +151,12 @@ h3{
     font-size: 30px;
     color: $color1;
     text-shadow: 1px 1px 2px $color3;
-}
-.carrito input{
-    margin-bottom: 10px;
+    background-color: $color3;
+    margin: 10px;
 }
 
-.compra{
-    background-color: $color3;
+.carrito input{
+    margin-bottom: 10px;
 }
 
 #form{
@@ -170,6 +185,11 @@ h3{
     color: $color3;
     font-size: 30px;
     text-shadow: 1px 1px 2px ;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
 
 
