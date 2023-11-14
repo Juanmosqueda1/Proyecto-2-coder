@@ -251,10 +251,24 @@ h3 {
 .foo {
   background-color: black;
   font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   color: white;
   height: 100%;
+  padding: 10px;
+}
+
+.foo a {
+  margin-right: 20px;
+}
+
+.foo a i {
+  transition: 0.7s;
+}
+
+.foo a i:hover {
+  scale: 1.5;
+  transition: 0.7s;
 }
 
 @media only screen and (min-width: 480px) {
