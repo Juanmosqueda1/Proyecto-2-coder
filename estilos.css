@@ -124,8 +124,8 @@ section div button {
 .games {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 600px);
-  grid-gap: 50px;
+  grid-template-rows: repeat(9, 250px);
+  grid-gap: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -140,7 +140,7 @@ section div button {
 
 .juegos {
   width: 80%;
-  height: 600px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   margin: auto;
@@ -148,39 +148,39 @@ section div button {
 }
 
 .game1 {
-  background-image: url(img/juego1.jpg);
+  background-image: url(img/juego1.webp);
 }
 
 .game2 {
-  background-image: url(img/juego2.jpg);
+  background-image: url(img/juego2.webp);
 }
 
 .game3 {
-  background-image: url(img/juego3.jpg);
+  background-image: url(img/juego3.webp);
 }
 
 .game4 {
-  background-image: url(img/juego4.jpg);
+  background-image: url(img/juego4.webp);
 }
 
 .game5 {
-  background-image: url(img/juego5.jpg);
+  background-image: url(img/juego5.webp);
 }
 
 .game6 {
-  background-image: url(img/juego6.jpg);
+  background-image: url(img/juego6.webp);
 }
 
 .game7 {
-  background-image: url(img/juego7.jpg);
+  background-image: url(img/juego7.webp);
 }
 
 .game8 {
-  background-image: url(img/juego8.jpg);
+  background-image: url(img/juego8.webp);
 }
 
 .game9 {
-  background-image: url(img/juego9.jpg);
+  background-image: url(img/juego9.webp);
 }
 
 h2 {
@@ -206,7 +206,6 @@ h3 {
   color: white;
   text-shadow: 1px 1px 2px #1e7ea1;
   background-color: #1e7ea1;
-  margin: 10px;
 }
 
 .carrito input {
@@ -215,7 +214,6 @@ h3 {
 
 #form {
   text-align: center;
-  margin: 10px;
   color: black;
   background-color: #1e7ea1;
 }
@@ -228,7 +226,6 @@ h3 {
   font-family: "Times New Roman", Times, serif;
   color: black;
   margin: 10px;
-  text-shadow: 0px 0px 2px black;
   font-size: 40px;
 }
 
@@ -280,12 +277,12 @@ h3 {
     grid-template-rows: repeat(3, 400px);
   }
   .games {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 400px);
-    margin: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 450px);
+    grid-gap: 0;
   }
   .juegos {
-    height: 400px;
+    height: 300px;
   }
   h2 {
     font-size: 40px;
@@ -335,13 +332,11 @@ h3 {
     padding: 10px;
   }
   .games {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 500px);
-    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 350px);
   }
   .juegos {
-    height: 500px;
-    width: 200px;
+    height: 300px;
   }
   h2 {
     font-size: 50px;
@@ -384,11 +379,11 @@ h3 {
   }
   .games {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 600px);
+    grid-template-rows: repeat(3, 400px);
     margin: 20px;
   }
   .juegos {
-    height: 600px;
+    height: 300px;
   }
   .foo {
     height: auto;

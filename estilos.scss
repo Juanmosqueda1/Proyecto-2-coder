@@ -99,8 +99,8 @@ section div button{
 .games{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, 600px);
-    grid-gap: 50px;
+    grid-template-rows: repeat(9, 250px);
+    grid-gap: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -115,7 +115,7 @@ section div button{
 
 .juegos{
     width: 80%;
-    height: 600px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -124,7 +124,7 @@ section div button{
 
 @for $i from 1 through 9{
         .game#{$i} {
-        background-image: url(img/juego#{$i}.jpg);
+        background-image: url(img/juego#{$i}.webp);
 } 
 }
 
@@ -152,7 +152,6 @@ h3{
     color: $color1;
     text-shadow: 1px 1px 2px $color3;
     background-color: $color3;
-    margin: 10px;
 }
 
 .carrito input{
@@ -161,7 +160,6 @@ h3{
 
 #form{
     text-align: center;
-    margin: 10px;
     color: $color2;
     background-color: $color3;
 }
@@ -174,7 +172,6 @@ h3{
     font-family: $font1;
     color: $color2;
     margin: 10px;
-    text-shadow: 0px 0px 2px $color2;
     font-size: 40px;
 }
 .faq p{
@@ -227,12 +224,12 @@ h3{
     }
 
     .games{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 400px);
-        margin: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 450px);
+        grid-gap: 0;
     }
     .juegos{
-        height: 400px;
+        height: 300px;
     }
     h2{
         font-size: 40px;
@@ -285,13 +282,11 @@ h3{
     }
 
     .games{
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: repeat(3, 500px);
-            margin: 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(5, 350px);
     }
     .juegos{
-        height: 500px;
-        width: 200px;
+        height: 300px;
     }
     h2{
         font-size: 50px;
@@ -339,11 +334,11 @@ h3{
 
     .games{
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 600px);
+        grid-template-rows: repeat(3, 400px);
         margin: 20px;
 }
     .juegos{
-        height: 600px;
+        height: 300px;
     }
 
     .foo{
