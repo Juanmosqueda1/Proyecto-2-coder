@@ -204,6 +204,11 @@ h3{
     animation-iteration-count: infinite;
 }
 
+.faq img{
+    width: 250px;
+    margin: 10px;
+}
+
 
 .foo{
     background-color: $color2;
@@ -249,6 +254,11 @@ h3{
     h2{
         font-size: 40px;
     }
+    .faq img{
+        width: 350px;
+        margin: 10px;
+    }
+    
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px){
@@ -317,6 +327,11 @@ h3{
         color: $color3;
         font-size: 40px;
     }
+    .faq img{
+        width: 450px;
+        margin: 10px;
+    }
+    
 }
 
 @media only screen and (min-width:1024px){
@@ -372,4 +387,9 @@ h3{
         color: $color3;
         font-size: 40px;
     }
+    .faq img{
+        width: 600px;
+        margin: 10px;
+    }
+    
 }
